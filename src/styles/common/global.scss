@@ -1,0 +1,24 @@
+@import '../mixins/media';
+@import '../../../node_modules/normalize.css/normalize';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(172, 172, 255);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
