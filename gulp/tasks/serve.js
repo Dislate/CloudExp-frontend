@@ -4,8 +4,8 @@ const server = require('browser-sync').create();
 const style = require('./style');
 const script = require('./script');
 const image = require('./image');
-const forwardFonts = require('./forward')('ttf', 'fonts/', 'fonts/');
-const forwardHtml = require('./forward')('html');
+const forwardHtml = require('./forward')('.html');
+const forwardFonts = require('./forward')('*');
 
 module.exports = function serve(cb) {
     server.init({
