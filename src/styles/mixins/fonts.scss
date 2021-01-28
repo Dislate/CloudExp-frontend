@@ -1,0 +1,4 @@
+@mixin font($fontFamily, $weight: 'normal') {
+    font-family: $fontFamily, sans-serif;
+    font-weight: $weight;
+} 
