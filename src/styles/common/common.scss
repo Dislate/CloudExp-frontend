@@ -120,6 +120,7 @@
 }
 
 .top-line {
+    padding-top: 40px;
     align-items: center;
     @include respond-down(tablet) {
         justify-content: space-between;
