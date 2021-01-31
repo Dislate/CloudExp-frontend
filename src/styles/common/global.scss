@@ -1,5 +1,5 @@
-@import '../mixins/media';
 @import '../../../node_modules/normalize.css/normalize';
+@import '../mixins/media';
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -11,13 +11,20 @@ html {
 
 body {
     margin: 0;
+    font-size: 16px;
+    color: $dark;
+    @include font('NunitoRegular');
+    position: relative;
 }
 
 img {
     max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
 a {
     text-decoration: none;
+    color: $dark;
+    @include font('NunitoRegular')
 }

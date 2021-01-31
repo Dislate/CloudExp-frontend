@@ -2,6 +2,24 @@ doctype html
 html
   include includes/head.pug
   body
-    include common/header.pug
-    h1 My Site
-    p Welcome to my super lame site. 
+    include common/mobile-nav.pug
+    header.header
+      .container
+        include common/top-line.pug
+        .header__content.grid
+          .header__text
+            h1.header__title Ваша персональная коробка знаний
+            p.header__subtitle Мы сами подберем информацию для вашего обучения
+          img(class="header__img" src="./img/header__illustrate.svg")
+    main.main
+      .container
+        .main__content.grid
+          .main__text.grid
+            h2.main__title.title.title_line-decorated Процесс обучения
+            ul.main__list
+              li Выбираете язык программирования для изучения
+              li Проходите темы
+              li Выполняете практические задания в конце
+          img(class="main__img" src="./img/content__illustrate.svg")
+    include common/footer.pug
+    

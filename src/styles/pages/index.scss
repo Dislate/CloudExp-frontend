@@ -1,0 +1,103 @@
+.header {
+    padding-top: 40px;
+}
+
+.header, .main {
+    background-color: $primary;
+    &__content {
+        grid-template-columns: minmax(auto, 370px) minmax(auto, 720px);
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 90px;
+        padding-bottom: 120px;
+        grid-gap: 20px;
+
+        @include respond-down(tablet) {
+            grid-template-columns: 1fr !important;
+            padding-top: 70px;
+            padding-bottom: 100px;
+        }
+
+        @include respond-down(mobile) {
+            padding-top: 40px;
+            padding-bottom: 70px;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        @include font('NunitoSemiBold', 600);
+        line-height: 130%;
+
+        @include respond-down(laptop) {
+            font-size: 2.5rem;
+            line-height: 120%;
+        }
+
+        @include respond-down(mobile) {
+            font-size: 2rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 1.25rem;
+        color: $light;
+
+        @include respond-down(mobile) {
+            font-size: 1rem;
+        }
+    }
+}
+
+.main {
+    background-color: #fff;
+
+    &__content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__text {
+        grid-template-columns: 64.912280702%;
+        justify-content: center;
+
+        @include respond-down(tablet) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__title {
+        font-size: 2.625rem;
+
+        @include respond-down(laptop) {
+            font-size: 2.125rem;
+            line-height: 120%;
+        }
+
+        @include respond-down(mobile) {
+            font-size: 1.625rem;
+        }
+    }
+
+    &__img {
+        max-width: 500px;
+        @include respond-down(tablet) {
+            margin: 0 auto;
+        }
+    }
+
+    &__list {
+        padding-left: 30px;
+        li {
+            font-size: 1.25rem;
+            color: $dark;
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            @include respond-down(mobile) {
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
