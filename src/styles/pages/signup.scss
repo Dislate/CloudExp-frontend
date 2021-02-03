@@ -1,13 +1,8 @@
-html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 .signup-main {
     justify-content: center;
     text-align: center;
     align-items: center;
+    min-height: 80.8vh;
     @include font('NunitoSemiBold', 600);
     &__block {
         input {
