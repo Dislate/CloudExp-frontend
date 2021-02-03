@@ -4,7 +4,7 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
 }
-.signin-main {
+.signup-main {
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -44,7 +44,7 @@ html, body {
         }
     }
 
-    &__login, &__password {
+    &__login, &__password, &__email {
         width: 280px;
         height: 40px;
         border-radius: 36px;
