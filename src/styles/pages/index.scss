@@ -1,8 +1,4 @@
-.header {
-    padding-top: 40px;
-}
-
-.header, .main {
+.landing-header, .landing-main {
     background-color: $primary;
     &__content {
         grid-template-columns: minmax(auto, 370px) minmax(auto, 720px);
@@ -49,7 +45,7 @@
     }
 }
 
-.main {
+.landing-main {
     background-color: #fff;
 
     &__content {
