@@ -8,6 +8,10 @@
     padding: 0 20px;
 }
 
+header {
+    padding-top: 40px;
+}
+
 .grid {
     display: grid;
 }
@@ -120,7 +124,6 @@
 }
 
 .top-line {
-    padding-top: 40px;
     align-items: center;
     @include respond-down(tablet) {
         justify-content: space-between;
