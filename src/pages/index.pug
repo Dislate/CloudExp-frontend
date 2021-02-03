@@ -3,23 +3,23 @@ html
   include includes/head.pug
   body
     include common/mobile-nav.pug
-    header.header
+    header.landing-header
       .container
         include common/top-line.pug
-        .header__content.grid
-          .header__text
-            h1.header__title Ваша персональная коробка знаний
-            p.header__subtitle Мы сами подберем информацию для вашего обучения
-          img(class="header__img" src="./img/header__illustrate.svg")
-    main.main
+        .landing-header__content.grid
+          .landing-header__text
+            h1.landing-header__title Ваша персональная коробка знаний
+            p.landing-header__subtitle Мы сами подберем информацию для вашего обучения
+          img(class="landing-header__img" src="./img/header__illustrate.svg")
+    main.landing-main
       .container
-        .main__content.grid
-          .main__text.grid
-            h2.main__title.title.title_line-decorated Процесс обучения
-            ul.main__list
+        .landing-main__content.grid
+          .landing-main__text.grid
+            h2.landing-main__title.title.title_line-decorated Процесс обучения
+            ul.landing-main__list
               li Выбираете язык программирования для изучения
               li Проходите темы
               li Выполняете практические задания в конце
-          img(class="main__img" src="./img/content__illustrate.svg")
+          img(class="landing-main__img" src="./img/content__illustrate.svg")
     include common/footer.pug
     
