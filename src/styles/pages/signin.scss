@@ -4,11 +4,11 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
 }
-.signin {
+.signin-main {
     justify-content: center;
     text-align: center;
     align-items: center;
-    @include font('NunitoSemiBold', 600)
+    @include font('NunitoSemiBold', 600);
     &__block {
         input {
             font-size: 0.875rem;
