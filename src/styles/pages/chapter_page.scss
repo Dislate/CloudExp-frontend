@@ -1,3 +1,103 @@
 #chapter-page {
-    align-content: space-between;
+    
+}
+
+.chapter-header {
+    margin-bottom: 90px;
+
+    @include respond-down(tablet) {
+        margin-bottom: 70px;
+    }
+
+    @include respond-down(mobile) {
+        margin-bottom: 40px;
+    }
+}
+
+.chapter-main {
+    min-height: 100%;
+    &__container {
+       grid-auto-flow: column;
+       grid-template-columns: minmax(auto, 370px) minmax(auto, 670px);
+       column-gap: 30px;
+       justify-content: start;
+
+       @include respond-down(tablet) {
+           grid-auto-flow: row;
+           grid-template-columns: 1fr;
+       }
+    }
+
+    &-sidebar {
+        &__title {
+            font-size: 1.25rem;
+        }
+
+        &__list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        &__list-item {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        
+        &__list-link {
+            color: $light;
+            position: relative;
+            &::after {
+                content: '';
+                display: block;
+                width: 6px;
+                height: 6px;
+                position: absolute;
+                border-radius: 50%;
+                top: 50%;
+                margin-top: -3px;
+                right: -15px;
+            }
+
+            &_notreaded {
+                &::after {
+                    background-color: $light;
+                }
+            }
+
+            &_readed {
+                &::after {
+                    background-color: $green;
+                }
+            }
+
+            &_reading {
+                @include font('NunitoSemiBold', 600);
+                color: $dark;
+                &::after {
+                    background-color: $gold;
+                }
+            }
+
+            @include respond-down(mobile) {
+                font-size: 0.75rem;
+            }
+        }
+
+        @include respond-down(tablet) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &-content {
+        &__title {
+            font-size: 1.5rem;
+        }
+
+        &__text {
+            color: $light;
+        }
+    }
 }
