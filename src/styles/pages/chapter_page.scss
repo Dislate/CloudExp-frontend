@@ -16,6 +16,7 @@
 
 .chapter-main {
     min-height: 100%;
+    margin-bottom: 40px;
     &__container {
        grid-auto-flow: column;
        grid-template-columns: minmax(auto, 370px) minmax(auto, 670px);
@@ -98,6 +99,67 @@
 
         &__text {
             color: $light;
+        }
+    }
+}
+
+.tasks {
+    &__header {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+}
+
+.task {
+    &__header {
+        font-size: 0.875rem;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        color: $light;
+        margin-bottom: 20px;
+    }
+
+    &-answer {
+        &__hide {
+            font-size: 0.75rem;
+            border: none;
+            background-color: #fff;
+            color: $light;
+            margin-right: 25px;
+            padding: 0;
+            position: relative;
+            &::after {
+                content: '';
+                display: block;
+                width: 6px;
+                height: 3px;
+                background: url('../img/arrow-up.svg') no-repeat center;
+                position: absolute;
+                top: 50%;
+                right: -12px;
+                margin-top: -2px;
+            }
+        }
+
+        &__show-hint {
+            @include font('NunitoBold', 700);
+            color: $dark;
+            border: none;
+            background-color: #fff;
+            position: relative;
+            &::after {
+                content: '';
+                display: block;
+                width: 16px;
+                height: 16px;
+                background: url('../img/exclamation.svg');
+                position: absolute;
+                top: 50%;
+                right: -15px;
+                margin-top: -8px;
+            }
         }
     }
 }
