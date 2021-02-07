@@ -25,12 +25,31 @@ html
             p.chapter-main-content__text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." 
             p.chapter-main-content__text Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.
             pre
-              code 
-                | function log() {
-                |   console.log('Hello World!');
-                |  }
+              code.python
+                |  class Manager(Person):
+                |      '''
+                |      Класс со специализированным методом GiveRaise,
+                |      наследующий  обощенные методы LastName и str
+                |      '''
+                |      def init(self, name, age, pay):
+                |          Person.init(self, name, age, pay, 'manager')
                 |
-                |  log();
+                |      def GiveRaise(self, percent, bonus=10):
+                |          Person.GiveRaise(self, percent + bonus)
+                |
+                |  if name == 'main':
+                |      bob = Person('Bob Smith', 42, 30000, "sofware")
+                |      sue = Person('Sue Jones', 45, 40000, "hardware")
+                |      tom = Manager('Tom Doe', 50, 40000)
+                |      print(sue, sue.pay, sue.LastName())
+                |      for person in [bob, sue, tom]:
+                |          person.GiveRaise(10)
+                |          print(person)
+            pre
+              code.html
+                | &lt;h1&gt;Hello&lt;/h1&gt;
+                | &lt;div&gt;132&lt;/div&gt;
+                
             p.chapter-main-content__text Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.
             .tasks
               h5.tasks__header Задачи
@@ -39,8 +58,57 @@ html
                 p.task__content Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.
                 .task-answer
                   .task-answer__code
+                    pre
+                      code.python
+                        |  class Manager(Person):
+                        |      '''
+                        |      Класс со специализированным методом GiveRaise,
+                        |      наследующий  обощенные методы LastName и str
+                        |      '''
+                        |      def init(self, name, age, pay):
+                        |          Person.init(self, name, age, pay, 'manager')
+                        |
+                        |      def GiveRaise(self, percent, bonus=10):
+                        |          Person.GiveRaise(self, percent + bonus)
+                        |
+                        |  if name == 'main':
+                        |      bob = Person('Bob Smith', 42, 30000, "sofware")
+                        |      sue = Person('Sue Jones', 45, 40000, "hardware")
+                        |      tom = Manager('Tom Doe', 50, 40000)
+                        |      print(sue, sue.pay, sue.LastName())
+                        |      for person in [bob, sue, tom]:
+                        |          person.GiveRaise(10)
+                        |          print(person)
                   button.task-answer__hide Скрыть решение
                   button.task-answer__show-hint Подсказка
+              .task
+                  h6.task__header Задача 2
+                  p.task__content Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.
+                  .task-answer
+                    .task-answer__code
+                      pre
+                        code.python
+                          |  class Manager(Person):
+                          |      '''
+                          |      Класс со специализированным методом GiveRaise,
+                          |      наследующий  обощенные методы LastName и str
+                          |      '''
+                          |      def init(self, name, age, pay):
+                          |          Person.init(self, name, age, pay, 'manager')
+                          |
+                          |      def GiveRaise(self, percent, bonus=10):
+                          |          Person.GiveRaise(self, percent + bonus)
+                          |
+                          |  if name == 'main':
+                          |      bob = Person('Bob Smith', 42, 30000, "sofware")
+                          |      sue = Person('Sue Jones', 45, 40000, "hardware")
+                          |      tom = Manager('Tom Doe', 50, 40000)
+                          |      print(sue, sue.pay, sue.LastName())
+                          |      for person in [bob, sue, tom]:
+                          |          person.GiveRaise(10)
+                          |          print(person)
+                    button.task-answer__hide Скрыть решение
+                    button.task-answer__show-hint Подсказка
             
     include common/footer.pug
     

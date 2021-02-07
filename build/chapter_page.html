@@ -1,5 +1,56 @@
-<!DOCTYPE html ><html><head><link rel="stylesheet" href="css/style.min.css"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="Sciencebox project"/><meta charset="UTF-8"/><title>Sciencebox</title></head><body id="chapter-page"><nav class="mobile-nav none"><button class="hamburger"></button><ul class="mobile-nav__list"><li><a href="#">Языки</a></li><li><a href="#">Курсы</a></li><li><a href="#">О нас</a></li></ul><ul class="mobile-nav__auth-btns grid"><li><a href="#">Вход</a></li><li><a href="#">Регистрация</a></li></ul></nav><header class="chapter-header"><div class="container"><div class="top-line grid"><div class="logo"><a href="#">ScienceBox</a></div><nav class="top-line__nav"><ul><li><a href="#">Языки</a></li><li><a href="#">Курсы</a></li><li><a href="#">О нас</a></li></ul></nav><ul class="top-line__auth-btns"><li><a href="#">Вход</a></li><li><a class="top-line_btn-expressed" href="#">Регистрация</a></li></ul><button class="hamburger"></button></div></div></header><main class="chapter-main"><div class="container chapter-main__container grid"><div class="chapter-main-sidebar"><h3 class="chapter-main-sidebar__title">Введение в работу языка</h3><ul class="chapter-main-sidebar__list"><li class="chapter-main-sidebar__list-item"><a class="chapter-main-sidebar__list-link chapter-main-sidebar__list-link_readed" href="#">- Почему Python?</a></li><li class="chapter-main-sidebar__list-item"><a class="chapter-main-sidebar__list-link chapter-main-sidebar__list-link_reading" href="#">- Прикладные области разработки Python</a></li><li class="chapter-main-sidebar__list-item"><a class="chapter-main-sidebar__list-link chapter-main-sidebar__list-link_notreaded" href="#">- Плюсы и минусы  языка</a></li><li class="chapter-main-sidebar__list-item"><a class="chapter-main-sidebar__list-link chapter-main-sidebar__list-link_notreaded" href="#">- Как выполняется программа</a></li></ul></div><div class="chapter-main-content"><div class="chapter-main-content"><h1 class="chapter-main-content__title">Прикладные области разработки Python</h1><p class="chapter-main-content__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." </p><p class="chapter-main-content__text">Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.</p><pre><code> function log() {
-  console.log('Hello World!');
- }
+<!DOCTYPE html ><html><head><link rel="stylesheet" href="css/style.min.css"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="Sciencebox project"/><meta charset="UTF-8"/><title>Sciencebox</title></head><body id="chapter-page"><nav class="mobile-nav none"><button class="hamburger"></button><ul class="mobile-nav__list"><li><a href="#">Языки</a></li><li><a href="#">Курсы</a></li><li><a href="#">О нас</a></li></ul><ul class="mobile-nav__auth-btns grid"><li><a href="#">Вход</a></li><li><a href="#">Регистрация</a></li></ul></nav><header class="chapter-header"><div class="container"><div class="top-line grid"><div class="logo"><a href="#">ScienceBox</a></div><nav class="top-line__nav"><ul><li><a href="#">Языки</a></li><li><a href="#">Курсы</a></li><li><a href="#">О нас</a></li></ul></nav><ul class="top-line__auth-btns"><li><a href="#">Вход</a></li><li><a class="top-line_btn-expressed" href="#">Регистрация</a></li></ul><button class="hamburger"></button></div></div></header><main class="chapter-main"><div class="container chapter-main__container grid"><div class="chapter-main-sidebar"><h3 class="chapter-main-sidebar__title">Введение в работу языка</h3><ul class="chapter-main-sidebar__list"><li class="chapter-main-sidebar__list-item"><a class="chapter-main-sidebar__list-link chapter-main-sidebar__list-link_readed" href="#">- Почему Python?</a></li><li class="chapter-main-sidebar__list-item"><a class="chapter-main-sidebar__list-link chapter-main-sidebar__list-link_reading" href="#">- Прикладные области разработки Python</a></li><li class="chapter-main-sidebar__list-item"><a class="chapter-main-sidebar__list-link chapter-main-sidebar__list-link_notreaded" href="#">- Плюсы и минусы  языка</a></li><li class="chapter-main-sidebar__list-item"><a class="chapter-main-sidebar__list-link chapter-main-sidebar__list-link_notreaded" href="#">- Как выполняется программа</a></li></ul></div><div class="chapter-main-content"><div class="chapter-main-content"><h1 class="chapter-main-content__title">Прикладные области разработки Python</h1><p class="chapter-main-content__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." </p><p class="chapter-main-content__text">Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.</p><pre><code class="python"> class Manager(Person):
+     '''
+     Класс со специализированным методом GiveRaise,
+     наследующий  обощенные методы LastName и str
+     '''
+     def init(self, name, age, pay):
+         Person.init(self, name, age, pay, 'manager')
 
- log();</code></pre><p class="chapter-main-content__text">Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.</p><div class="tasks"><h5 class="tasks__header">Задачи</h5><div class="task"><h6 class="task__header">Задача 1</h6><p class="task__content">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.</p><div class="task-answer"><div class="task-answer__code"></div><button class="task-answer__hide">Скрыть решение</button><button class="task-answer__show-hint">Подсказка</button></div></div></div></div></div></div></main><footer class="footer"><div class="container"><div class="footer__content grid"><div class="logo"><a href="#">ScienceBox</a></div><nav class="footer__nav"><ul class="grid"><li><a href="#">Условия</a></li><li><a href="#">О нас</a></li><li><a href="#">Контакты</a></li></ul></nav><ul class="footer__social grid"><li><a class="github" href="#"></a></li></ul></div></div></footer><script src="js/main.min.js"></script></body></html>
+     def GiveRaise(self, percent, bonus=10):
+         Person.GiveRaise(self, percent + bonus)
+
+ if name == 'main':
+     bob = Person('Bob Smith', 42, 30000, "sofware")
+     sue = Person('Sue Jones', 45, 40000, "hardware")
+     tom = Manager('Tom Doe', 50, 40000)
+     print(sue, sue.pay, sue.LastName())
+     for person in [bob, sue, tom]:
+         person.GiveRaise(10)
+         print(person)</code></pre><pre><code class="html">&lt;h1&gt;Hello&lt;/h1&gt;
+&lt;div&gt;132&lt;/div&gt;</code></pre><p class="chapter-main-content__text">Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.</p><div class="tasks"><h5 class="tasks__header">Задачи</h5><div class="task"><h6 class="task__header">Задача 1</h6><p class="task__content">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.</p><div class="task-answer"><div class="task-answer__code"><pre><code class="python"> class Manager(Person):
+     '''
+     Класс со специализированным методом GiveRaise,
+     наследующий  обощенные методы LastName и str
+     '''
+     def init(self, name, age, pay):
+         Person.init(self, name, age, pay, 'manager')
+
+     def GiveRaise(self, percent, bonus=10):
+         Person.GiveRaise(self, percent + bonus)
+
+ if name == 'main':
+     bob = Person('Bob Smith', 42, 30000, "sofware")
+     sue = Person('Sue Jones', 45, 40000, "hardware")
+     tom = Manager('Tom Doe', 50, 40000)
+     print(sue, sue.pay, sue.LastName())
+     for person in [bob, sue, tom]:
+         person.GiveRaise(10)
+         print(person)</code></pre></div><button class="task-answer__hide">Скрыть решение</button><button class="task-answer__show-hint">Подсказка</button></div></div><div class="task"><h6 class="task__header">Задача 2</h6><p class="task__content">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.</p><div class="task-answer"><div class="task-answer__code"><pre><code class="python"> class Manager(Person):
+     '''
+     Класс со специализированным методом GiveRaise,
+     наследующий  обощенные методы LastName и str
+     '''
+     def init(self, name, age, pay):
+         Person.init(self, name, age, pay, 'manager')
+
+     def GiveRaise(self, percent, bonus=10):
+         Person.GiveRaise(self, percent + bonus)
+
+ if name == 'main':
+     bob = Person('Bob Smith', 42, 30000, "sofware")
+     sue = Person('Sue Jones', 45, 40000, "hardware")
+     tom = Manager('Tom Doe', 50, 40000)
+     print(sue, sue.pay, sue.LastName())
+     for person in [bob, sue, tom]:
+         person.GiveRaise(10)
+         print(person)</code></pre></div><button class="task-answer__hide">Скрыть решение</button><button class="task-answer__show-hint">Подсказка</button></div></div></div></div></div></div></main><footer class="footer"><div class="container"><div class="footer__content grid"><div class="logo"><a href="#">ScienceBox</a></div><nav class="footer__nav"><ul class="grid"><li><a href="#">Условия</a></li><li><a href="#">О нас</a></li><li><a href="#">Контакты</a></li></ul></nav><ul class="footer__social grid"><li><a class="github" href="#"></a></li></ul></div></div></footer><script src="libs/highlightjs/highlight.pack.min.js"></script><script src="js/main.min.js"></script></body></html>
