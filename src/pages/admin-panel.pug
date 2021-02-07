@@ -1,0 +1,86 @@
+doctype html 
+html
+  include includes/head.pug
+  body
+    include common/mobile-nav.pug
+    header.admin-panel-header
+      .container
+        include common/top-line.pug
+    main.admin-panel-main
+      .container.admin-panel-main__container.grid
+        .admin-panel-main__col 
+            ul.admin-panel-main__languages
+                li.admin-panel-main__language Python
+                    ul.admin-panel-main__parts.show
+                        li.admin-panel-main__part #1 Python - Введение в работу языка
+                            ul.admin-panel-main__chapters.show
+                                li.admin-panel-main__chapter Почему Python? 
+                                li.admin-panel-main__chapter.active Прикладные области разработки Python
+                                li.admin-panel-main__chapter Плюсы и минусы  языка 
+                                li.admin-panel-main__chapter Как выполняется программа
+                                li.admin-panel-main__chapter
+                                    button.admin-panel-main__add-btn + Добавить
+                        li.admin-panel-main__part #2 Python - Типы данных и операции
+                            ul.admin-panel-main__chapters.hidden
+                                li.admin-panel-main__chapter Почему Python? 
+                                li.admin-panel-main__chapter Прикладные области разработки Python
+                                li.admin-panel-main__chapter Плюсы и минусы  языка 
+                                li.admin-panel-main__chapter Как выполняется программа
+                                li.admin-panel-main__chapter
+                                    button.admin-panel-main__add-btn + Добавить
+                        li.admin-panel-main__part #3 Python - Операторы и синтаксис
+                            ul.admin-panel-main__chapters.hidden
+                                li.admin-panel-main__chapter Почему Python? 
+                                li.admin-panel-main__chapter Прикладные области разработки Python
+                                li.admin-panel-main__chapter Плюсы и минусы  языка 
+                                li.admin-panel-main__chapter Как выполняется программа
+                                li.admin-panel-main__chapter
+                                    button.admin-panel-main__add-btn + Добавить
+                        li.admin-panel-main__part #4 Python - Функции и генераторы
+                            ul.admin-panel-main__chapters.hidden
+                                li.admin-panel-main__chapter Почему Python? 
+                                li.admin-panel-main__chapter Прикладные области разработки Python
+                                li.admin-panel-main__chapter Плюсы и минусы  языка 
+                                li.admin-panel-main__chapter Как выполняется программа
+                                li.admin-panel-main__chapter
+                                    button.admin-panel-main__add-btn + Добавить
+                        li.admin-panel-main__part #5 Python - Модули и пакеты
+                            ul.admin-panel-main__chapters.hidden
+                                li.admin-panel-main__chapter Почему Python? 
+                                li.admin-panel-main__chapter Прикладные области разработки Python
+                                li.admin-panel-main__chapter Плюсы и минусы  языка 
+                                li.admin-panel-main__chapter Как выполняется программа
+                                li.admin-panel-main__chapter
+                                    button.admin-panel-main__add-btn + Добавить
+                        li.admin-panel-main__part
+                            button.admin-panel-main__add-btn + Добавить
+                li.admin-panel-main__language
+                    button.admin-panel-main__add-btn + Добавить
+        .admin-panel-main__col.grid
+            textarea#admin-panel-main__text-chapter
+            p.admin-panel-main__tasks-title
+            .admin-panel-main__tasks-buttons
+                button.admin-panel-main__tasks-btn.active-task #1
+                button.admin-panel-main__tasks-btn #2
+                button.admin-panel-main__tasks-btn #3
+                button.admin-panel-main__tasks-add-btn +
+            p.admin-panel-main__name-task Название задачи
+            input(type="text" class='admin-panel-main__input-task') 
+            p.admin-panel-main__condition-task Условия задачи
+            input(type="text" class='admin-panel-main__input-task')
+            p.admin-panel-main__hint-task Подсказка
+            input(type="text" class='admin-panel-main__input-task')
+            p.admin-panel-main__solution-task Решение
+            input(type="text" class='admin-panel-main__input-task')
+            button.admin-panel-main__add-task-btn(data-element='add-task-btn') + Добавить задачу
+            button.admin-panel-main__create-chapter(data-element='create-chapter') Создать
+        .admin-panel-main__col
+            button(class='admin-panel-main__h1 admin-panel-main__add-btn' data-element='h1') + Заголовок 1 уровня
+            button(class='admin-panel-main__h2 admin-panel-main__add-btn' data-element='h2') + Заголовок 2 уровня
+            button(class='admin-panel-main__h3 admin-panel-main__add-btn' data-element='h3') + Заголовок 3 уровня
+            button(class='admin-panel-main__ul admin-panel-main__add-btn' data-element='ul') + Маркерованный список
+            button(class='admin-panel-main__ol admin-panel-main__add-btn' data-element='ol') + Нумерованный список
+            button(class='admin-panel-main__p admin-panel-main__add-btn' data-element='p') + Параграф
+            button(class='admin-panel-main__img admin-panel-main__add-btn' data-element='img') + Изображение
+            button(class='admin-panel-main__highlightjs admin-panel-main__add-btn' data-element='highlightjs') + Вставить highlight-код
+    include common/footer.pug
