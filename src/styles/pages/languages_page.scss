@@ -1,0 +1,58 @@
+.languages-main {
+    min-height: 80vh;
+
+    &__text h1 {
+        padding-top: 80px;
+    }
+    
+    &__title {
+        text-align: center;
+        background-color: $primary;
+        padding: 10px 0 10px 0;
+        font-size: 1rem;
+        @include font('NunitoSemiBold', 600);
+    }
+
+    &__items {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 10px;
+        @include respond-down(tablet) {
+            grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+        }
+    }
+    
+    &__item {
+        margin: 10px 10px 10px 0;
+        position: relative;
+        margin-left: 15px;        
+        &::before {
+            display: inline-block;
+            content:'';
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            top: 6px;
+            left: -15px;
+
+        }
+
+        &_readed {
+            &::before {
+                background-color: $green;
+            }
+        }
+    
+        &_unreaded {
+            &::before {
+                background-color: $light;
+            }
+        }
+    
+        &_reading {
+            &::before {
+                background-color: $gold;
+            }
+        }
+    }
+}

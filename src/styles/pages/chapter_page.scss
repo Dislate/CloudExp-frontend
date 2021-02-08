@@ -1,0 +1,169 @@
+.chapter-header {
+    margin-bottom: 90px;
+
+    @include respond-down(tablet) {
+        margin-bottom: 70px;
+    }
+
+    @include respond-down(mobile) {
+        margin-bottom: 40px;
+    }
+}
+
+.chapter-main {
+    min-height: 100%;
+    margin-bottom: 40px;
+    &__container {
+       grid-auto-flow: column;
+       grid-template-columns: minmax(auto, 370px) minmax(auto, 670px);
+       column-gap: 30px;
+       justify-content: start;
+
+       @include respond-down(tablet) {
+           grid-auto-flow: row;
+           grid-template-columns: 1fr;
+       }
+    }
+
+    &-sidebar {
+        &__title {
+            font-size: 1.25rem;
+        }
+
+        &__list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        &__list-item {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        
+        &__list-link {
+            color: $light;
+            position: relative;
+            &::after {
+                content: '';
+                display: block;
+                width: 6px;
+                height: 6px;
+                position: absolute;
+                border-radius: 50%;
+                top: 50%;
+                margin-top: -3px;
+                right: -15px;
+            }
+
+            &_notreaded {
+                &::after {
+                    background-color: $light;
+                }
+            }
+
+            &_readed {
+                &::after {
+                    background-color: $green;
+                }
+            }
+
+            &_reading {
+                @include font('NunitoSemiBold', 600);
+                color: $dark;
+                &::after {
+                    background-color: $gold;
+                }
+            }
+
+            @include respond-down(mobile) {
+                font-size: 0.75rem;
+            }
+        }
+
+        @include respond-down(tablet) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &-content {
+        &__title {
+            font-size: 1.5rem;
+        }
+
+        &__text {
+            color: $light;
+        }
+    }
+}
+
+.tasks {
+    &__header {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+}
+
+.task {
+    &__header {
+        font-size: 0.875rem;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        color: $light;
+        margin-bottom: 20px;
+    }
+
+    &-answer {
+        button {
+            cursor: pointer;
+        }
+        
+        &__hide {
+            font-size: 0.75rem;
+            border: none;
+            background-color: #fff;
+            color: $light;
+            margin-right: 25px;
+            padding: 0;
+            position: relative;
+            &::after {
+                content: '';
+                display: block;
+                width: 6px;
+                height: 3px;
+                background: url('../img/arrow-up.svg') no-repeat center;
+                position: absolute;
+                top: 50%;
+                right: -12px;
+                margin-top: -2px;
+            }
+        }
+
+        &__show-hint {
+            @include font('NunitoBold', 700);
+            color: $dark;
+            border: none;
+            background-color: #fff;
+            position: relative;
+            &::after {
+                content: '';
+                display: block;
+                width: 16px;
+                height: 16px;
+                background: url('../img/exclamation.svg');
+                position: absolute;
+                top: 50%;
+                right: -15px;
+                margin-top: -8px;
+            }
+        }
+    }
+}
+
+pre {
+    white-space: pre-wrap;
+}

@@ -1,0 +1,16 @@
+doctype html 
+html
+  include includes/head.pug
+  body#signin-body
+    include common/mobile-nav.pug
+    header.signin-header
+        .container
+            include common/top-line.pug
+    main.signin-main.grid
+        .container
+            .signin-main__block.grid
+                h1.signin-main__text ВХОД
+                input(type="text", name="" class='signin-main__login' placeholder='Логин')
+                input(type="password", name="" class='signin-main__password' placeholder='Пароль')
+                input(type="button", value="Войти" class='signin-main__btn')
+    include common/footer.pug

@@ -1,3 +1,6 @@
+//Hightlightjs
+@import '../../build/libs/highlightjs/styles/github-gist.css';
+
 @import 'utils/variables.scss';
 @import 'utils/fonts.scss';
 @import 'mixins/fonts.scss';
@@ -7,3 +10,8 @@
 //Pages
 
 @import 'pages/index.scss';
+<<<<<<< .merge_file_Yzgljc
+@import 'pages/chapter_page.scss'
+=======
+@import 'pages/signin.scss';
+>>>>>>> .merge_file_LPsSgg
