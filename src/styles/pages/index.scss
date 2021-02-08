@@ -1,6 +1,6 @@
 .landing-header, .landing-main {
     background-color: $primary;
-    &__content {
+    &__container {
         grid-template-columns: minmax(auto, 370px) minmax(auto, 720px);
         align-items: center;
         justify-content: space-between;
@@ -48,7 +48,7 @@
 .landing-main {
     background-color: #fff;
 
-    &__content {
+    &__container {
         grid-template-columns: 1fr 1fr;
     }
 
