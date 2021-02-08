@@ -1,0 +1,17 @@
+doctype html 
+html
+  include includes/head.pug
+  body
+    include common/mobile-nav.pug
+    header.signup-header
+        .container
+            include common/top-line.pug
+    main.signup-main.grid
+        .container
+            .signup-main__block.grid
+                h1.signup-main__text ВХОД
+                input(type="email", name="" class='signup-main__email' placeholder='Email')
+                input(type="text", name="" class='signup-main__login' placeholder='Логин')
+                input(type="password", name="" class='signup-main__password' placeholder='Пароль')
+                input(type="button", value="Войти" class='signup-main__btn')
+    include common/footer.pug

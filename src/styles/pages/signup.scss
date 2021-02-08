@@ -1,0 +1,67 @@
+.signup-main {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 80.8vh;
+    @include font('NunitoSemiBold', 600);
+    &__block {
+        input {
+            font-size: 0.875rem;
+        }
+    }
+
+    &__text {
+        @include font('NunitoBold', 700);
+        font-size: 1rem;
+        position: relative;
+        margin-bottom: 20px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: $primary;
+            width: 100px;
+            height: 2px;
+            top: 50%;
+            left: 5px;
+            border-radius: 5px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: $primary;
+            width: 100px;
+            height: 2px;
+            top: 50%;
+            right: 5px;
+            border-radius: 5px;
+        }
+    }
+
+    &__login, &__password, &__email {
+        width: 280px;
+        height: 40px;
+        border-radius: 36px;
+        border: none;
+        background-color: $primary;
+        margin-bottom: 10px;
+        padding-left: 25px;
+        outline: none;
+        &::placeholder {
+            color: $dark;
+        }
+
+    }
+
+    &__btn {
+        width: 130px;
+        height: 40px;
+        border: none;
+        border-radius: 36px;
+        background-color: $accent;
+        color: #fff;
+        margin-top: 40px;
+        justify-self: center;
+    }
+}
