@@ -105,7 +105,7 @@ header {
 
     .hamburger {
         position: absolute;
-        top: 48px;
+        top: 50px;
         right: 20px;
     }
     
@@ -124,9 +124,13 @@ header {
 }
 
 .top-line {
-    align-items: center;
-    @include respond-down(tablet) {
-        justify-content: space-between;
+    &__container {
+        align-items: center;
+        grid-auto-flow: column;
+        
+        @include respond-down(tablet) {
+            justify-content: space-between;
+        }
     }
 
     ul {
@@ -145,8 +149,6 @@ header {
         list-style-type: none;
     }
 
-    grid-auto-flow: column;
-
     &__nav {
         ul {
             justify-content: center;
@@ -155,15 +157,6 @@ header {
 
     &__auth-btns {
         justify-content: end;
-    }
-
-    &_btn-expressed {
-        @include respond-down(tablet) {
-            padding: 14px 45px;
-            border-radius: 36px;
-            background-color: $accent;
-            color: #fff;
-        }
     }
 }
 
