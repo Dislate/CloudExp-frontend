@@ -124,6 +124,7 @@ header {
 }
 
 .top-line {
+<<<<<<< HEAD
     &__container {
         align-items: center;
         grid-auto-flow: column;
@@ -131,6 +132,11 @@ header {
         @include respond-down(tablet) {
             justify-content: space-between;
         }
+=======
+    align-items: center;
+    @include respond-down(tablet) {
+        justify-content: space-between;
+>>>>>>> 3c92ae4a67ccd1fb2bdaa07a367843ff106da762
     }
 
     ul {
@@ -204,4 +210,9 @@ header {
     width: 24px;
     height: 24px;
     background: url('../img/github.svg');
+}
+
+input, button {
+    outline: none;
+    border: none;
 }
