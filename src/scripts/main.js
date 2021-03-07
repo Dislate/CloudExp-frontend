@@ -46,19 +46,33 @@ function insertTag() {
         
         if(target.classList.contains('admin-panel-main__h1')) {
             insertTag('<h1></h1>');
-        } else if(target.classList.contains('admin-panel-main__h2')) {
+        }
+        
+        if(target.classList.contains('admin-panel-main__h2')) {
             insertTag('<h2></h2>');
-        } else if(target.classList.contains('admin-panel-main__h3')) {
+        } 
+        
+        if(target.classList.contains('admin-panel-main__h3')) {
             insertTag('<h3></h3>');
-        } else if(target.classList.contains('admin-panel-main__ul')) {
+        }
+        
+        if(target.classList.contains('admin-panel-main__ul')) {
             insertTag('<ul><li></li></ul>');
-        } else if(target.classList.contains('admin-panel-main__ol')) {
+        }
+        
+        if(target.classList.contains('admin-panel-main__ol')) {
             insertTag('<ol><li></li></ol>');
-        } else if(target.classList.contains('admin-panel-main__p')) {
+        }
+        
+        if(target.classList.contains('admin-panel-main__p')) {
             insertTag('<p></p>');
-        } else if(target.classList.contains('admin-panel-main__img')) {
+        }
+        
+        if(target.classList.contains('admin-panel-main__img')) {
             insertTag('<img src="" alt=""></img>');
-        } else if(target.classList.contains('admin-panel-main__higlightjs')) {
+        }
+        
+        if(target.classList.contains('admin-panel-main__highlightjs')) {
             insertTag('<pre><code class="hljs"></code><pre>');
         }
     });
