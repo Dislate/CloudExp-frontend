@@ -24,47 +24,44 @@ function toggleAdminMenu() {
 
 function insertTag() {
     const textarea = document.querySelector('#admin-panel-main__text-chapter');
-
-    const h1Btn = document.querySelector('.admin-panel-main__h1');
-    const h2Btn = document.querySelector('.admin-panel-main__h2');
-    const h3Btn = document.querySelector('.admin-panel-main__h3');
-    const ulBtn = document.querySelector('.admin-panel-main__ul');
-    const olBtn = document.querySelector('.admin-panel-main__ol');
-    const pBtn = document.querySelector('.admin-panel-main__p');
-    const imgBtn = document.querySelector('.admin-panel-main__img');
-    const highlightBtn = document.querySelector('.admin-panel-main__highlightjs');
+    let startPos = textarea.selectionStart;
+    let endPos = textarea.selectionEnd;
     
-    h1Btn.onclick = () => {
-        textarea.textContent += '<h1><h1>';
+    const container = document.querySelector('#btns-cont');
+
+    textarea.onclick = () => {
+        startPos = textarea.selectionStart;
+        endPos = textarea.selectionEnd;
+        console.log(startPos, endPos)
     }
 
-    h2Btn.onclick = () => {
-        textarea.textContent += '<h2><h2>';
-    }
-
-    h3Btn.onclick = () => {
-        textarea.textContent += '<h3><h3>';
-    }
-
-    ulBtn.onclick = () => {
-        textarea.textContent += '<ul><ul>';
-    }
-
-    olBtn.onclick = () => {
-        textarea.textContent += '<ol><ol>';
-    }
-
-    pBtn.onclick = () => {
-        textarea.textContent += '<p><p>';
-    }
-
-    imgBtn.onclick = () => {
-        textarea.textContent += '<img src="" alt=""><img>';
-    }
-
-    highlightBtn.onclick = () => {
-        textarea.textContent += '<pre><code class="hljs"></code><pre>';
-    }
+    container.addEventListener('click', (event) => {
+        const target = event.target;
+        startPos = textarea.selectionStart;
+        endPos = textarea.selectionEnd;
+        console.log(startPos, endPos)
+        function insertTag(tag) {
+            textarea.value = textarea.value.substring(0, startPos) + tag + textarea.value.substring(endPos, textarea.value.length);
+        }
+        
+        if(target.classList.contains('admin-panel-main__h1')) {
+            insertTag('<h1></h1>');
+        } else if(target.classList.contains('admin-panel-main__h2')) {
+            insertTag('<h2></h2>');
+        } else if(target.classList.contains('admin-panel-main__h3')) {
+            insertTag('<h3></h3>');
+        } else if(target.classList.contains('admin-panel-main__ul')) {
+            insertTag('<ul><li></li></ul>');
+        } else if(target.classList.contains('admin-panel-main__ol')) {
+            insertTag('<ol><li></li></ol>');
+        } else if(target.classList.contains('admin-panel-main__p')) {
+            insertTag('<p></p>');
+        } else if(target.classList.contains('admin-panel-main__img')) {
+            insertTag('<img src="" alt=""></img>');
+        } else if(target.classList.contains('admin-panel-main__higlightjs')) {
+            insertTag('<pre><code class="hljs"></code><pre>');
+        }
+    });
 }
 
 
